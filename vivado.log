@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 22 23:18:43 2021
+# Process ID: 15480
+# Current directory: D:/VHDL_files/FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8424 D:\VHDL_files\FIFO\FIFO.xpr
+# Log file: D:/VHDL_files/FIFO/vivado.log
+# Journal file: D:/VHDL_files/FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VHDL_files/FIFO/FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.oopen_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 750.539 ; gain = 78.887update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 22 23:20:04 2021...
+nching behavioral simulation in 'D:/VHDL_files/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'module_fifo_regs_with_flags' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VHDL_files/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj module_fifo_regs_with_flags_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VHDL_files/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto 5dac32e26c504a92a1f84d8a22ee694f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot module_fifo_regs_with_flags_behav xil_defaultlib.module_fifo_regs_with_flags -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5dac32e26c504a92a1f84d8a22ee694f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot module_fifo_regs_with_flags_behav xil_defaultlib.module_fifo_regs_with_flags -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VHDL_files/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "module_fifo_regs_with_flags_behav -key {Behavioral:sim_1:Functional:module_fifo_regs_with_flags} -tclbatch {module_fifo_regs_with_flags.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source module_fifo_regs_with_flags.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'module_fifo_regs_with_flags_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 885.426 ; gain = 41.637
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VHDL_files/FIFO/FIFO.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Jul 22 23:20:19 2021] Launched synth_1...
+Run output will be captured here: D:/VHDL_files/FIFO/FIFO.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Jul 22 23:20:52 2021] Launched impl_1...
+Run output will be captured here: D:/VHDL_files/FIFO/FIFO.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s15cpga196-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1044.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1120.746 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1120.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1120.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.563 ; gain = 336.137
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1608.129 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 22 23:22:27 2021...
